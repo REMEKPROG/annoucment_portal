@@ -1,0 +1,44 @@
+.annoucmentPage-main{
+    position: relative;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.annoucment-container{
+    position: relative;
+    width: 80%;
+    padding: 10px;
+    background-color: rgba(94, 113, 141,0.75);
+}
+
+.annoucment-title h1{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 48px;
+    color: rgb(42, 65, 97);
+}
+
+.annoucment-properties .annoucment-contents{
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.annoucment-properties .annoucment-contents p{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.annoucment-properties .annoucment-image{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,37 @@
+.deleteAnnoucment-main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userAnnoucment-container-section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(94, 113, 141,0.75);
+    border-radius: 4px;
+    width: 93%;
+}
+
+.userAnnoucment-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.annoucment-box input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 1;
+}
