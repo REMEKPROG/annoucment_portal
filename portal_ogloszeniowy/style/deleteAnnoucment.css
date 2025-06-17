@@ -1,0 +1,176 @@
+.deleteAnnoucment-main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.userAnnoucment-container-section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(94, 113, 141,0.75);
+    border-radius: 4px;
+    width: 93%;
+}
+
+.userAnnoucment-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+
+.annoucment-box input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 200;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.select-input{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+.input-select-annoucment {
+    display: none;
+}
+
+.singleAnnoucment{
+    position: relative;
+    display: flex;
+}
+
+.annoucment-box-user{
+    position: relative;
+    z-index: 1001;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.annoucment-box-user .annoucment-image{
+    position: relative;
+    top: 0;
+    background-image: url(../img/sky-34536_1280.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+    height: 150px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: top 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.annoucment-box-user .annoucment-box-text h2{
+    margin-bottom: 5px;
+    user-select: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(218, 213, 213);
+}
+
+.annoucment-box-user .annoucment-box-text p{
+    user-select: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: rgb(218, 213, 213);
+}
+.clicked-annoucment{
+    position: relative;
+    transform: scale(0.9);
+}
+
+.clicked-annoucment label{
+    background-color: rgba(255,0,0, 0.1);
+}
+
+.userAnnoucment-container .deleteButton{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px 20px;
+    margin: 20px auto;
+    width: 25%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(121, 146, 180);
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.userAnnoucment-container .disabled-button{
+    background-color: rgba(0,0,0, 0.4);
+    color: rgba(0,0,0, 0.4);
+    cursor: not-allowed;
+}
+
+.warning-information-annoucment{
+    display: none;
+    position: absolute;
+    padding: 100px;
+    z-index: 1002;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(94, 113, 141);
+    border-radius: 10px;
+}
+
+.warning-information-annoucment .warning-text{
+    position: relative;
+}
+
+.warning-information-annoucment .warning-text h4{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    color: red;
+}
+
+.warning-information-annoucment .warning-buttons{
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.warning-information-annoucment .warning-buttons button{
+    padding: 10px;
+    margin: 10px;
+    width: 50%;
+    border: none;
+    border-radius: 5px;
+    background: rgba(0,0,0, 0.6);
+    cursor: pointer;
+}
+
+.warning-information-annoucment .warning-buttons button:hover{
+    background-color: rgba(0,0,0, 0.5);
+}

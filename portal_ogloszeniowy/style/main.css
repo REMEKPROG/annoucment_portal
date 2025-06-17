@@ -1,0 +1,189 @@
+@import url(./register.css);
+@import url(./annocments.css);
+@import url(./addAnoucment.css);
+@import url(./login.css);
+@import url(./annoucmentPage.css);
+@import url(./deleteAnnoucment.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+nav{
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: #3C4A5D;
+}
+
+nav .nav-list{
+    position: relative;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+nav .nav-list li{
+    margin: 5px 60px 5px 3px;
+}
+
+nav .nav-list li:last-child{
+    position: relative;
+    background-color: #B0BEC5;
+    border-radius: 15px;
+    left: 1%;
+}
+nav .nav-list li:last-child a{
+    display: inline-block;
+    font-weight: bolder;
+    color: #2C2F33;
+    padding: 7.5px 15px;
+}
+
+nav .nav-list li:first-child{
+    position: absolute;
+    left: 10px;
+}
+
+nav .nav-list li a{
+    text-decoration: none;
+    color: #B0BEC5;
+    font-size: 110%;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    user-select: none;
+}
+
+nav .nav-list .dropdown-container{
+    position: relative;
+}
+
+nav .nav-list .droptown-nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3C4A5D;
+    list-style: none;
+    display: none;
+    min-width: 300px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+nav .nav-list .droptown-nav li{
+    margin-top: 10px;
+}
+
+nav .nav-list .droptown-nav li a{
+    display: block;
+    text-align: center;
+}
+
+nav .nav-list .droptown-nav li a{
+    margin-top: 10px;
+}
+
+nav .nav-list .droptown-nav li:first-child{
+    position: relative;
+    background-color: transparent;
+}
+nav .nav-list .droptown-nav li:last-child{
+    position: relative;
+    background-color: transparent;
+}
+
+nav .nav-list .droptown-nav li:last-child a{
+    color: #B0BEC5;
+    font-weight: 400;
+}
+
+.dropdown-container:hover .droptown-nav{
+    display: block;
+}
+
+nav .droptown-start {
+    user-select: none;
+}
+
+
+.alerth2{
+    text-align: center;
+    margin: 5px 0 10px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 36px;
+    padding: 5px;
+    color: #B0BEC5;
+}
+
+.footer{
+    position: relative;
+    background-color: #3C4A5D;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-items{
+    position: relative;
+    color: #B0BEC5;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer-items .footer-company h3{
+    text-align: center;
+}
+
+.footer-items .media{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-items .media i{
+    transition: transform 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+                margin 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.footer-items .media a{
+    color: #B0BEC5;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 15px;
+    transition: color 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.footer-items .media a:hover{
+    color: #4d72a5;
+}
+
+.footer-items .media a:hover i{
+    transform: scale(1.2);
+    margin: 0 5px 0 5px;
+}
+
+.footer .lastLog-information{
+    position: absolute;
+    left: 0;
+}
+
+.footer .lastLog-information p{
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #B0BEC5;
+}

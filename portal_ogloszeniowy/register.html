@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rejestracja</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc8a4d7559.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="nav-conatiner">
+        <ul class="nav-list">
+            <li><a href="./template_user/annoucments.php">Ogłoszenia</a></li>
+            <li class="dropdown-container">
+                <a class="droptown-start">Panel użytkownika</a>
+                <ul class="droptown-nav">
+                    <li><a href="./template_user/addAnnoucment.php">Dodaj ogłoszenie</a></li>
+                    <li><a href="./template_user/deleteAnnoucment.php">Usuń ogłoszenie</a></li>
+                </ul>
+            </li>
+            <li><a href="login.html">Logowanie</a></li>
+            <li><a href="#">Rejestracja</a></li>
+        </ul>
+    </nav>
+
+    <main class="register-main">
+        <div class="bg-cover"></div>
+        <section class="register-container">
+            <div class="register-form">
+                <form action="./php/registerSystem.php" method="post">
+                    <h2>Rejestracja</h2>
+                    <hr>
+                    <div class="register-form-name-surname-section">
+                        <div class="name-cell">
+                            <label for="name">Imię</label> <br>
+                            <input type="text" name="name" id="name">
+                            <p class="inform-text-name inform-text"></p>
+                        </div>
+                        <div class="surname-cell">
+                            <label for="surname">nazwisko</label> <br>
+                            <input type="text" name="surname" id="surname">
+                            <p class="inform-text-surname inform-text"></p>
+                        </div>
+                    </div>
+                    <hr class="form-line">
+                    <div class="register-form-login-password-email-section">
+                        <div class="display-exception">
+                            <div class="login-cell">
+                                <label for="login">Login</label> <br>
+                                <input type="text" name="login" id="login"> <br>
+                            </div>
+                            <div class="password-cell">
+                                <label for="password">Hasło</label> <br>
+                                <input type="password" name="password" id="password">
+                            </div>
+                        </div>
+                            <div class="email-cell">
+                                <label for="email">E-mail</label> <br>
+                                <input type="email" name="email" id="email"> <br>
+                            </div>
+                    </div>
+                    <p class="small-text">*Pamiętaj, że za pomocą loginu się będziesz logować!</p>
+                    <hr class="form-line">
+                    <button class="submit-button">Zarejestruj</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-items">
+                <div class="footer-company">
+                    <h3>&copy;Portal ogłoszeniowy</h3>
+                </div>
+                <div class="media">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-x-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/form-reservation-style-val.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+.login-form-login-password-email-section{
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.login-display-section{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.login-section-password-cell input{
+    margin-top: 7.5px;
+}

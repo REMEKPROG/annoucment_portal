@@ -1,0 +1,158 @@
+.annoucment-body{
+    background-image: url(../img/sky-34536_1280.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.annoucments-main{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.annoucments-main .searching-form-section{
+    position: relative;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(94, 113, 141,0.75);
+    border-radius: 4px;
+    width: 93%;
+}
+
+.annoucments-main .searching-form-container{
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.annoucments-main .searching-form-container .time-option{
+    position: relative;
+    display: flex;
+}
+
+.annoucments-main .searching-form-container .time-option select{
+    margin: 0 10px;
+    padding: 10px 20px;
+    appearance: none;
+}
+
+.annoucments-main .annoucments-container-section{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(94, 113, 141,0.75);
+    border-radius: 4px;
+    width: 93%;
+}
+
+.annoucments-main .annoucments-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.annoucments-container-section h3{
+    color: white;
+}
+
+.annoucment-box{
+    position: relative;
+    margin: 15px;
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.annoucment-box .annoucment-image{
+    position: relative;
+    top: 0;
+    background-image: url(../img/img_users/Zrzut\ ekranu\ 2025-03-15\ 211128.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 150px;
+    height: 150px;
+    width: 250px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: top 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+
+
+.annoucments-container .annoucment-box .annoucment-box-text h2{
+    margin-bottom: 5px;
+    user-select: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(218, 213, 213);
+}
+
+.annoucments-container .annoucment-box .annoucment-box-text p{
+    user-select: none;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    color: rgb(218, 213, 213);
+}
+.annoucment-box-text{
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    min-height: 80px;
+    z-index: 100;
+    background-color: rgb(121, 146, 180);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    overflow: auto;
+    transition: bottom 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.annoucment-box:hover .annoucment-box-text{
+    bottom: 25px;
+}
+
+.annoucment-page-link{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+.annoucment-box-text .author-data-post-text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1003;
+}
+
+.annoucment-box-text .author-data-post-text h4{
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    color: #3C4A5D;
+}
+
+.annoucments-container .annoucment-box .annoucment-box-text .data-text{
+    font-size: 12px;
+}
+
+.searching-form-container .time-option select{
+    border: none;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+.searching-form-container .time-option select option{
+    width: 100%;
+    text-align: left;
+    background-color: royalblue;
+}
+
+
